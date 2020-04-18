@@ -15,11 +15,210 @@
         />
 
     <com.xiphitech.myktapplication.CalInputView
-        android:layout_width="@dimen/icon_size"
+        android:id="@+id/key_clear"
+        android:layout_width="0dp"
         android:layout_height="@dimen/icon_size"
+        app:item_icon="@drawable/ic_trash"
         app:layout_constraintTop_toBottomOf="@id/cal_top_view"
         app:layout_constraintStart_toStartOf="parent"
-        app:item_icon="@drawable/ic_trash"
+        app:layout_constraintEnd_toStartOf="@id/key_divide"
         />
 
+    <com.xiphitech.myktapplication.CalInputView
+        android:id="@+id/key_divide"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/icon_size"
+        app:item_icon="@drawable/ic_divide"
+        app:layout_constraintStart_toEndOf="@id/key_clear"
+        app:layout_constraintTop_toBottomOf="@id/cal_top_view"
+        app:layout_constraintEnd_toStartOf="@id/key_multiply"
+        />
+
+    <com.xiphitech.myktapplication.CalInputView
+        android:id="@+id/key_multiply"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/icon_size"
+        app:item_icon="@drawable/ic_multiply"
+        app:layout_constraintStart_toEndOf="@id/key_divide"
+        app:layout_constraintTop_toBottomOf="@id/cal_top_view"
+        app:layout_constraintEnd_toStartOf="@id/key_backspace"
+        />
+
+    <com.xiphitech.myktapplication.CalInputView
+        android:id="@+id/key_backspace"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/icon_size"
+        app:item_icon="@drawable/ic_delete"
+        app:layout_constraintStart_toEndOf="@id/key_multiply"
+        app:layout_constraintTop_toBottomOf="@id/cal_top_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <com.xiphitech.myktapplication.CalInputView
+        android:id="@+id/key_7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_string="7"
+        app:layout_constraintTop_toBottomOf="@id/key_clear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/key_4"
+        app:layout_constraintEnd_toStartOf="@id/key_8"
+        />
+
+    <com.xiphitech.myktapplication.CalInputView
+        android:id="@+id/key_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_string="4"
+        app:layout_constraintTop_toBottomOf="@id/key_7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/key_1"
+        app:layout_constraintEnd_toStartOf="@id/key_5"
+        />
+
+    <com.xiphitech.myktapplication.CalInputView
+        android:id="@+id/key_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_string="1"
+        app:layout_constraintTop_toBottomOf="@id/key_4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/key_percent"
+        app:layout_constraintEnd_toStartOf="@id/key_2"
+        />
+
+    <com.xiphitech.myktapplication.CalInputView
+        android:id="@+id/key_percent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_string="%"
+        app:layout_constraintTop_toBottomOf="@id/key_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/key_0"
+        />
+
+
+    <com.xiphitech.myktapplication.CalInputView
+        android:id="@+id/key_8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_string="8"
+        app:layout_constraintTop_toBottomOf="@id/key_divide"
+        app:layout_constraintStart_toEndOf="@id/key_7"
+        app:layout_constraintBottom_toTopOf="@id/key_5"
+        app:layout_constraintEnd_toStartOf="@id/key_9"
+        />
+
+    <com.xiphitech.myktapplication.CalInputView
+        android:id="@+id/key_5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_string="5"
+        app:layout_constraintTop_toBottomOf="@id/key_8"
+        app:layout_constraintStart_toEndOf="@id/key_4"
+        app:layout_constraintBottom_toTopOf="@id/key_2"
+        app:layout_constraintEnd_toStartOf="@id/key_6"
+        />
+
+    <com.xiphitech.myktapplication.CalInputView
+        android:id="@+id/key_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_string="2"
+        app:layout_constraintTop_toBottomOf="@id/key_5"
+        app:layout_constraintStart_toEndOf="@id/key_1"
+        app:layout_constraintBottom_toTopOf="@id/key_0"
+        app:layout_constraintEnd_toStartOf="@id/key_3"
+        />
+
+    <com.xiphitech.myktapplication.CalInputView
+        android:id="@+id/key_0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_string="0"
+        app:layout_constraintTop_toBottomOf="@id/key_2"
+        app:layout_constraintStart_toEndOf="@id/key_percent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/key_blank1"
+        />
+
+
+    <com.xiphitech.myktapplication.CalInputView
+        android:id="@+id/key_9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_string="9"
+        app:layout_constraintTop_toBottomOf="@id/key_multiply"
+        app:layout_constraintStart_toEndOf="@id/key_8"
+        app:layout_constraintBottom_toTopOf="@id/key_6"
+        app:layout_constraintEnd_toStartOf="@id/key_minus"
+        />
+
+    <com.xiphitech.myktapplication.CalInputView
+        android:id="@+id/key_6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_string="6"
+        app:layout_constraintTop_toBottomOf="@id/key_9"
+        app:layout_constraintStart_toEndOf="@id/key_5"
+        app:layout_constraintBottom_toTopOf="@id/key_3"
+        app:layout_constraintEnd_toStartOf="@id/key_plus"
+        />
+
+    <com.xiphitech.myktapplication.CalInputView
+        android:id="@+id/key_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_string="3"
+        app:layout_constraintTop_toBottomOf="@id/key_6"
+        app:layout_constraintStart_toEndOf="@id/key_2"
+        app:layout_constraintBottom_toTopOf="@id/key_blank1"
+        app:layout_constraintEnd_toStartOf="@id/key_equals"
+        />
+
+    <View
+        android:id="@+id/key_blank1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/key_3"
+        app:layout_constraintStart_toEndOf="@id/key_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/key_equals"
+        />
+
+    <com.xiphitech.myktapplication.CalInputView
+        android:id="@+id/key_minus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_icon="@drawable/ic_minus"
+        app:layout_constraintTop_toBottomOf="@id/key_backspace"
+        app:layout_constraintStart_toEndOf="@id/key_9"
+        app:layout_constraintBottom_toTopOf="@id/key_plus"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <com.xiphitech.myktapplication.CalInputView
+        android:id="@+id/key_plus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_icon="@drawable/ic_plus"
+        app:layout_constraintTop_toBottomOf="@id/key_minus"
+        app:layout_constraintStart_toEndOf="@id/key_6"
+        app:layout_constraintBottom_toTopOf="@id/key_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <com.xiphitech.myktapplication.CalInputView
+        android:id="@+id/key_equals"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_icon="@drawable/ic_equal"
+        app:layout_constraintTop_toBottomOf="@id/key_plus"
+        app:layout_constraintStart_toEndOf="@id/key_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

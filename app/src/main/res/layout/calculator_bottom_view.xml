@@ -17,6 +17,7 @@
         android:layout_height="@dimen/icon_size"
         android:src="@drawable/ic_trash"
         android:tint="@color/colorAccent"
+        android:padding="20dp"
         android:layout_centerInParent="true"/>
 
 
