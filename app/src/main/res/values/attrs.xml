@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="CalInputView">
+        <attr name="item_string" format="string"/>
+        <attr name="item_icon" format="reference"/>
+
+    </declare-styleable>
+    
+</resources>

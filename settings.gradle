@@ -1,0 +1,2 @@
+rootProject.name='MyKtApplication'
+include ':app'
