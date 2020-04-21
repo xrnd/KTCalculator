@@ -28,6 +28,7 @@
         android:layout_centerInParent="true"
         android:textColor="@color/colorText"
         android:textStyle="bold"
+        android:gravity="center"
         android:textSize="@dimen/text_big"/>
 
     <View
