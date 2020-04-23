@@ -46,13 +46,15 @@ object CalOutputPresenter {
 
     private fun calculateOutcome() {
 
-        if (mEquation.isNullOrEmpty()) {
+        if (!mEquation.isNullOrEmpty()) {
             try {
                 mInterpreter.eval("result = $mEquation")
                 val result = mInterpreter.get("result")
 
                 if (result != null && result is Int) {
                     mOutcome = result.toString()
+                } else {
+                    mOutcome = ""
                 }
 
             } catch (e: Exception) {

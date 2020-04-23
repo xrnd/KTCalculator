@@ -13,9 +13,9 @@ class CalInputView(context : Context, attributeSet : AttributeSet) : RelativeLay
     init {
 
         //Inflate layout
-       LayoutInflater.from(context).inflate(R.layout.calculator_bottom_view,this, true);
+        LayoutInflater.from(context).inflate(R.layout.calculator_bottom_view, this, true)
 
-        attributeSet?.run {
+        attributeSet.run {
             val typedArray :TypedArray = context.obtainStyledAttributes(attributeSet,R.styleable.CalInputView)
             val inputName :String? = typedArray.getString(R.styleable.CalInputView_item_string)
             val inputIconRes :Int = typedArray.getResourceId(R.styleable.CalInputView_item_icon, -1)
@@ -23,15 +23,15 @@ class CalInputView(context : Context, attributeSet : AttributeSet) : RelativeLay
             when{
                 inputIconRes != -1 -> {
                     input_icon.apply {
-                        visibility = View.VISIBLE;
+                        visibility = View.VISIBLE
                         setImageResource(inputIconRes)
                     }
-                    input_text.visibility = View.GONE;
+                    input_text.visibility = View.GONE
                 }
                 !inputName.isNullOrEmpty() -> {
                     input_text.apply{
-                        visibility = View.VISIBLE;
-                        setText(inputName)
+                        visibility = View.VISIBLE
+                        text = inputName
                     }
                     input_icon.visibility = View.GONE
                 }
