@@ -21,7 +21,7 @@ class CalOutputView(context: Context, attributeSet: AttributeSet) :
     }
 
     //<editor-fold desc="USER ACTIONS">
-    fun remove() {
+    fun removeLast() {
         CalOutputPresenter.removeLast()
     }
 
@@ -29,7 +29,7 @@ class CalOutputView(context: Context, attributeSet: AttributeSet) :
         CalOutputPresenter.add(item)
     }
 
-    fun clearAll() {
+    fun removeAll() {
         CalOutputPresenter.removeAll()
     }
 

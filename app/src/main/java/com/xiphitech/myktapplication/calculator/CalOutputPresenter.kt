@@ -36,7 +36,7 @@ object CalOutputPresenter {
     }
 
     fun solve() {
-        if (mOutcome.isEmpty()) {
+        if (!mOutcome.isEmpty()) {
             mEquation = mOutcome
             mOutcome = ""
         }
