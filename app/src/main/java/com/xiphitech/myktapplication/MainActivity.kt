@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         key_multiply.setOnClickListener { cal_top_view.add("*") }
         key_minus.setOnClickListener { cal_top_view.add("-") }
 
+        key_percent.setOnClickListener { cal_top_view.add("%") }
     }
 
 

@@ -40,9 +40,7 @@ class CalInputView(context : Context, attributeSet : AttributeSet) : RelativeLay
                     input_icon.visibility = View.GONE
                 }
             }
-
             typedArray.recycle()
-
         }
     }
 

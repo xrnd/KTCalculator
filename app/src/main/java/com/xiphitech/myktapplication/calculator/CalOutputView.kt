@@ -38,7 +38,7 @@ class CalOutputView(context: Context, attributeSet: AttributeSet) :
     }
     //</editor-fold>
 
-
+    //<editor-fold desc="LIFE CYCLE">
     override fun onAttachedToWindow() {
         super.onAttachedToWindow()
         CalOutputPresenter.attach(this)
@@ -48,6 +48,7 @@ class CalOutputView(context: Context, attributeSet: AttributeSet) :
         super.detachAllViewsFromParent()
         CalOutputPresenter.detach()
     }
+    //</editor-fold>
 
     //<editor-fold desc="INTERFACE ACTIONS">
     override fun setEquation(equation: String) {
@@ -58,7 +59,5 @@ class CalOutputView(context: Context, attributeSet: AttributeSet) :
         calculated_text.text = outcome
     }
     //</editor-fold>
-
-
 
 }

@@ -10,6 +10,7 @@ object CalOutputPresenter {
     private var mOutcome: String = ""
     private var mInterpreter = Interpreter()
 
+    //<editor-fold desc="USER ACTIONS">
     fun add(item: String) {
         mEquation = mEquation.plus(item)
         updateEquation()
@@ -43,7 +44,9 @@ object CalOutputPresenter {
         updateEquation()
         updateOutcome()
     }
+    //</editor-fold>
 
+    //<editor-fold desc="INTERNAL">
     private fun calculateOutcome() {
 
         if (!mEquation.isNullOrEmpty()) {
@@ -73,13 +76,19 @@ object CalOutputPresenter {
     private fun updateOutcome() {
         mView?.setOutcome(mOutcome)
     }
+    //</editor-fold>
 
+    //<editor-fold desc="LIFE CYCLE">
     fun attach(view: CalOutputInterfaceView) {
         mView = view
+        updateEquation()
+        updateOutcome()
     }
 
     fun detach() {
         mView = null
     }
+    //</editor-fold>
+
 
 }
